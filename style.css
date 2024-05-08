@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-main {
+    width:100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    
+    color: #fff;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.container-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+   
+}
+.container-fluid{
+    width:100%
+}
+.content {
+    color: #ffffff; /* Text color for content */
+    text-align: center;
+    z-index: 1; /* Ensure content appears above the background overlay */}
+
+.navigation{
+    display: flex;
+    justify-content:end;
+}
+
+.span {
+    background-color: #fd2121;
+    color: white;
+    border: none;
+}
+.first-con{
+    padding:80px 60px
+}
+.custom-css{
+    margin-top: 150px;
+}
+h1{
+    font-weight: bold;
+}
+h4,p{
+    font-weight: 500;
+}
+.custom{
+ background-color: #000000;
+    color: white;
+}
+.custom-image{
+    max-width: 100%;
+    min-width: 10rem;
+    
+}
+.faq-container {
+    /* max-width: 600px; */
+    width: 100%;
+}
+
+
+.faq-item {
+    /* border: 1px solid #ddd; */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+}
+
+
+.question {
+    background-color: rgb(79, 79, 79);
+    padding: 20px;
+    font-size: 25px;
+    /* font-weight: bold; */
+    cursor: pointer;
+   
+}
+
+.answer {
+    padding: 20px;
+    font-size: 25px;
+    display: none;
+    border-top: 1px solid black;
+}
+
+.answer.show {
+    display: block;
+}
+ul>li{
+    list-style-type: none;
+    margin-top: 8px;
+    list-style: none;
+    padding: 5px;
+    color: white;
+       
+    
+}
+ul>li>a{
+    text-decoration:underline;
+    color: white;
+    background-color: transparent;
+}
+a:hover{
+    text-decoration:none;
+    font-size: 18px;
+    color: white;
+}
+#last-input{
+    background-color: rgb(79, 79, 79);;
+}
+#last-input::placeholder{
+    color:rgb(209, 209, 209);
+    padding: 10px;
+    font-size: 20px;
+}
+body{
+    background-color:rgb(52, 50, 50);
+}
